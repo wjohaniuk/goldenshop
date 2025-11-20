@@ -1,6 +1,8 @@
-$variablename: value;
 $gold_color: #d4af37;
+$portfoli_gbcolor: #e2dede;
 $navlink_color: #e0dcdc;
+$navlin_bgcolor:#000;
+$whitefont: #fff;
 
 //Global
 *,
@@ -14,7 +16,6 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7;
-  color: #2c2c54;
 }
 
 .wrapper {
@@ -28,7 +29,7 @@ section {
 }
 
 .navigation {
-  background-color: black;
+  background-color: $navlin_bgcolor;
   position: fixed;
   width: 100%;
   .container {
@@ -57,7 +58,7 @@ section {
           font-weight: 500;
 
           &:hover {
-            color: #d4af37;
+            color: $gold_color;
           }
         }
       }
@@ -75,19 +76,19 @@ section {
   left: 50%;
   right: auto;
   bottom: auto;
-  color: #fff;
+  color: $whitefont;
   transform: translate(-50%, -50%);
 
   h3 {
     font-weight: 700;
-    text-shadow: 0 1px 1px black;
+    text-shadow: 0 1px 1px $navlin_bgcolor;
     font-size: 3.5em;
     margin-top: 3px;
   }
 
   h4 {
     text-align: center;
-    text-shadow: 0 1px 1px black;
+    text-shadow: 0 1px 1px $navlin_bgcolor;
     font-style: italic;
     font-size: 28px;
     margin-bottom: 3px;
@@ -96,8 +97,8 @@ section {
   .btn {
     display: flex;
     justify-content: center;
-    background-color: #d4af37;
-    color: white;
+    background-color: $gold_color;
+    color: $whitefont;
     padding: 5px;
     text-decoration: none;
     border-radius: 5%;
@@ -107,7 +108,7 @@ section {
   }
   .btn:hover {
     color: rgb(255, 255, 255);
-    background-color: gold;
+    background-color: $navlink_color;
   }
 }
 
@@ -125,9 +126,9 @@ section {
   .border {
     display: flex;
     justify-content: center;
-    color: gold;
+    color: $gold_color;
     font-size: 16px;
-    border: 5px solid gold;
+    border: 5px solid $gold_color;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -155,7 +156,7 @@ p {
 .portfolio {
   display: flex;
   padding: 160px;
-  background-color: #e2dede;
+  background-color: $portfoli_gbcolor;
   .box {
     flex: 0 0 33.333%;
     padding: 32px;
@@ -181,7 +182,7 @@ p {
 
     .text {
       padding: 16px;
-      background-color: white;
+      background-color: $whitefont;
     }
   }
 }
