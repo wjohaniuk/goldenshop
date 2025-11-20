@@ -107,7 +107,7 @@ section {
     width: 33%;
   }
   .btn:hover {
-    color: rgb(255, 255, 255);
+    color: $whitefont;
     background-color: $navlink_color;
   }
 }
@@ -227,7 +227,6 @@ p {
     }
 	.text{
 			width: 280px;  
-
 	}
 }
 }
